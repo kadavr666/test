@@ -1,12 +1,7 @@
 <ul>
     {% for post in postslist %}
-       <h2>{{ title }}</h2>
-<img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
-<p> {{ content | safe }}</p>
         <li>
-            <strong>
-                <a href="{{ post.url | url}}">{{ post.data.title }}</a>
-            </strong>
+                <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
             -
             <span>
                 {{ post.data.description}}
